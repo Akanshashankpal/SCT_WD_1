@@ -1,0 +1,275 @@
+.hero,
+.page-hero {
+  display: flex;
+  align-items: flex-end;
+  padding: 8.5rem 0 4.5rem;
+  color: var(--cream);
+  background:
+    radial-gradient(900px 420px at 85% 0%, rgba(226, 91, 42, 0.38), transparent 60%),
+    linear-gradient(165deg, #2c261e 0%, #161410 58%, #0e0d0b 100%);
+}
+
+.hero {
+  min-height: 100vh;
+}
+
+.page-hero {
+  min-height: 70vh;
+}
+
+.hero h1,
+.page-hero h1 {
+  max-width: 12ch;
+  margin-bottom: 1rem;
+  font-size: clamp(3rem, 7vw, 6.2rem);
+}
+
+.lede {
+  max-width: 38rem;
+  margin-bottom: 0;
+  font-size: 1.15rem;
+  color: rgba(247, 242, 234, 0.82);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.8rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.8rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.25rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: var(--cream);
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  background: var(--accent);
+  color: #fff;
+}
+
+.button--ghost {
+  background: transparent;
+  color: var(--cream);
+  border-color: rgba(247, 242, 234, 0.45);
+}
+
+.button--ghost:hover,
+.button--ghost:focus-visible {
+  background: var(--cream);
+  color: var(--ink);
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.section h2 {
+  max-width: 18ch;
+  margin-bottom: 1.5rem;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+}
+
+.section--deep {
+  background: var(--paper-deep);
+}
+
+.section p {
+  color: var(--muted);
+}
+
+.section__more {
+  margin: 1.5rem 0 0;
+}
+
+.section__more a {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.info-card,
+.project-card,
+.project-row,
+.contact-aside {
+  background: #fffdf8;
+  border: 1px solid var(--line);
+  border-radius: 1.1rem;
+}
+
+.info-card,
+.project-card {
+  padding: 1.3rem 1.3rem 1.4rem;
+}
+
+.info-card h3,
+.project-card h3,
+.project-row h2,
+.contact-aside h2 {
+  margin-bottom: 0.45rem;
+  font-size: 1.7rem;
+}
+
+.project-card__swatch,
+.project-row__swatch {
+  border-radius: 0.8rem;
+}
+
+.project-card__swatch {
+  height: 7.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-row {
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  gap: 1.25rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+.project-row__swatch {
+  min-height: 7rem;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.stat-row article {
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.stat-row h3 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+}
+
+.narrow {
+  max-width: 40rem;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+}
+
+.form label {
+  display: grid;
+  gap: 0.4rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 0.85rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  background: #fffdf8;
+  color: var(--ink);
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: 2px solid var(--accent);
+  border-color: transparent;
+}
+
+.form .button {
+  justify-self: start;
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.form .button:hover,
+.form .button:focus-visible {
+  background: var(--accent);
+  color: #fff;
+}
+
+.form__note {
+  margin: 0;
+  color: var(--accent-deep, #9a3412);
+  font-weight: 600;
+}
+
+.contact-aside {
+  padding: 1.5rem;
+}
+
+.contact-aside a {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+@media (max-width: 800px) {
+  .hero,
+  .page-hero {
+    padding-top: 7.5rem;
+  }
+
+  .card-grid,
+  .split,
+  .stat-row,
+  .contact-layout,
+  .project-row {
+    grid-template-columns: 1fr;
+  }
+
+  .project-row__swatch {
+    min-height: 5.5rem;
+  }
+}
